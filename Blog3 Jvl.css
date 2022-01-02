@@ -1,0 +1,80 @@
+    body {
+        background-color: #84AC79;
+    }
+    
+    #topic {
+        background-color: darkblue;
+        background-image: url("photo/Photo_1629559496705.jpg");
+        text-align: center;
+        border: 25px solid rgb(132, 172, 121, .5);
+    }
+    
+    .textTopic {
+        color: darkblue;
+        font-size: 75px;
+        padding-top: 30px;
+        text-shadow: 6px 6px 12px black;
+    }
+    
+    .textTopicH2 {
+        color: #84AC79;
+        font-size: 50px;
+        text-shadow: 3px 3px 6px black;
+        text-align: center;
+    }
+    
+    .textTopicH3 {
+        color: darkblue;
+        font-size: 60px;
+        text-shadow: 3px 3px 6px black;
+        text-align: center;
+    }
+    
+    .border {
+        /* display: grid; */
+        border: 40px solid;
+        border-image: url("photo/Photo_1629559496705.jpg")30 round;
+        margin: 3%;
+        padding: 2%;
+        box-shadow: 10px 10px 20px black;
+        background: #84AC79;
+        /* background: black; */
+    }
+    
+    .grid-container-section1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 450px;
+    }
+    
+    #blog3photo1 {
+        /* grid-area: photo1; */
+        align-self: flex-end;
+    }
+    
+    #blog3photo2 {
+        /* grid-area: photo2; */
+        align-self: flex-start;
+    }
+    
+    #blog3photo3 {
+        /* grid-area: photo3; */
+        align-self: flex-end;
+    }
+    
+    #table {
+        height: 400px;
+        width: 600px;
+        border: 2px solid black;
+        background: black;
+    }
+    
+    tr {
+        background: black;
+    }
+    
+    td,
+    th {
+        background: #84AC79;
+    }
