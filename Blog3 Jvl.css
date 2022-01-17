@@ -1,5 +1,6 @@
     body {
-        background-color: #84AC79;
+        /*background-color: #84AC79;*/
+        background: linear-gradient(to right, #84AC79 0%, #84AC79 20%, rgb(32, 230, 108) 28%, rgb(32, 230, 108) 72%, #84AC79 80%, #84AC79 100%);
     }
     
     #topic {
@@ -63,11 +64,27 @@
         align-self: flex-end;
     }
     
+    ul {
+        display: inline-block;
+        position: relative;
+        left: 25%;
+        right: 15%;
+    }
+    
     #table {
         height: 400px;
         width: 600px;
         border: 2px solid black;
         background: black;
+        align-items: center;
+    }
+    
+    #elTable {
+        display: inline-block;
+        position: relative;
+        left: 25%;
+        right: 15%;
+        margin-bottom: 100px;
     }
     
     tr {
@@ -77,4 +94,16 @@
     td,
     th {
         background: #84AC79;
+    }
+    
+    footer {
+        background-image: url("photo/Photo_1629559496705.jpg");
+        text-align: center;
+        border: 12px solid rgb(132, 172, 121, .5);
+        width: 100%;
+        bottom: 0;
+    }
+    
+    a {
+        color: darkblue;
     }
