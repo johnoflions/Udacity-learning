@@ -1,97 +1,191 @@
-body {
-    background-color: #84AC79;
-}
-
-#topic {
-    background-color: darkblue;
-    background-image: url("photo/Photo_1629559496705.jpg");
-    text-align: center;
-    border: 25px solid rgb(132, 172, 121, .5);
-}
-
-.textTopic {
-    color: darkblue;
-    font-size: 75px;
-    padding-top: 30px;
-    text-shadow: 6px 6px 12px black;
-}
-
-.textTopicH2 {
-    color: #84AC79;
-    font-size: 50px;
-    text-shadow: 3px 3px 6px black;
-    text-align: center;
-}
-
-.textTopicH3 {
-    color: darkblue;
-    font-size: 60px;
-    text-shadow: 3px 3px 6px black;
-}
-
-.border {
-    /* display: grid; */
-    border: 40px solid;
-    border-image: url("photo/Photo_1629559496705.jpg")30 round;
-    margin: 3%;
-    padding: 2%;
-    box-shadow: 10px 10px 20px black;
-    background: #84AC79;
-    /* background: black; */
-}
-
-.grid-container-blog2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 375px);
-    grid-template-areas: 'photo1 blog1' 'blog2 photo2' 'photo3 blog3';
-    grid-gap: 10px;
-}
-
-.blog2cell {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #84AC79;
-    margin: 8%;
-}
-
-#blog2photo1 {
-    display: grid;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: 45% 45%;
-    grid-area: photo1;
-}
-
-#blog2text1 {
-    grid-area: blog1;
-}
-
-#blog2photo2 {
-    grid-area: photo2;
-}
-
-#blog2text2 {
-    grid-area: blog2;
-    display: flex;
-    flex-direction: column;
-}
-
-#blog2photo3 {
-    grid-area: photo3;
-}
-
-#blog2text3 {
-    grid-area: blog3;
-}
-
-ul {
-    list-style-type: none;
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-}
-
-li:before {
-    content: "• ";
-}
+        body {
+            background-color: #84AC79;
+        }
+        
+        #topic {
+            background-color: darkblue;
+            background-image: url("photo/Photo_1629559496705.jpg");
+            text-align: center;
+            border: 25px solid rgb(132, 172, 121, .5);
+        }
+        
+        .textTopic {
+            color: darkblue;
+            font-size: 75px;
+            padding-top: 30px;
+            text-shadow: 6px 6px 12px black;
+        }
+        
+        .textTopicH2 {
+            color: #84AC79;
+            font-size: 50px;
+            text-shadow: 3px 3px 6px black;
+            text-align: center;
+        }
+        
+        .textTopicH3 {
+            color: darkblue;
+            font-size: 60px;
+            text-shadow: 3px 3px 6px black;
+        }
+        
+        .border {
+            /* display: grid; */
+            border: 40px solid;
+            border-image: url("photo/Photo_1629559496705.jpg")30 round;
+            margin: 3%;
+            padding: 2%;
+            box-shadow: 10px 10px 20px black;
+            background: #84AC79;
+            /* background: black; */
+        }
+        
+        .grid-container-blog2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3, 375px);
+            grid-template-areas: 'photo1 blog1' 'blog2 photo2' 'photo3 blog3';
+            grid-gap: 10px;
+        }
+        
+        .blog2cell {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #84AC79;
+            margin: 8%;
+        }
+        
+        #blog2photo1 {
+            display: grid;
+            grid-template-columns: 45% 45%;
+            grid-template-rows: 45% 45%;
+            grid-area: photo1;
+        }
+        
+        #blog2text1 {
+            font-size: 22px;
+            grid-area: blog1;
+        }
+        
+        #blog2photo2 {
+            font-size: 22px;
+            grid-area: photo2;
+        }
+        
+        #blog2text2 {
+            grid-area: blog2;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #blog2photo3 {
+            grid-area: photo3;
+        }
+        
+        #blog2text3 {
+            font-size: 22px;
+            grid-area: blog3;
+        }
+        
+        ul {
+            list-style-type: none;
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+        }
+        
+        li:before {
+            content: "• ";
+        }
+        
+        section>ul>li {
+            font-size: 18px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav>h3>ul {
+            columns: 1;
+        }
+        
+        @media only screen and (min-width:801px) and (max-width:1200px) {
+            .textTopic {
+                color: darkblue;
+                font-size: 65px;
+            }
+            .textTopicH3 {
+                color: darkred;
+                font-size: 50px;
+            }
+            #blog2text1,
+            #blog2text3 {
+                font-size: 18px;
+                color: white;
+            }
+            .grid-container-blog2 {
+                display: flex;
+                flex-direction: column;
+                /* grid-template-columns: 1fr 1fr;
+            grid-template-areas: 'blog1' 'photo1' 'blog2' 'photo2' 'blog3' 'photo3'; */
+            }
+            .blog2cell {
+                display: flex;
+                margin: 1%;
+                width: 80%;
+                height: 100%;
+            }
+            #blog2photo2>img,
+            #blog2photo3>img {
+                width: 80%;
+                height: auto;
+            }
+            #blog2photo1>img {
+                width: 70%;
+                height: auto;
+                margin-bottom: 5%;
+                margin-top: 5%;
+            }
+        }
+        
+        @media(max-width:800px) {
+            .textTopic {
+                color: darkred;
+                font-size: 55px;
+            }
+            .textTopicH3 {
+                color: darkblue;
+                font-size: 40px;
+            }
+            #blog2text1,
+            #blog2text3 {
+                font-size: 18px;
+                color: darkgreen;
+            }
+            .grid-container-blog2 {
+                display: flex;
+                flex-direction: column;
+                /* grid-template-columns: 1fr 1fr;
+            grid-template-areas: 'blog1' 'photo1' 'blog2' 'photo2' 'blog3' 'photo3'; */
+            }
+            .blog2cell {
+                display: flex;
+                margin: 1%;
+                width: 80%;
+                height: 100%;
+            }
+            #blog2photo2>img,
+            #blog2photo3>img {
+                width: 80%;
+                height: auto;
+            }
+            #blog2photo1>img {
+                width: 60%;
+                height: auto;
+                margin-bottom: 5%;
+                margin-top: 5%;
+            }
+        }
