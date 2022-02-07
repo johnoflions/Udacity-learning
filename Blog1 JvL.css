@@ -121,9 +121,15 @@
         align-items: center;
     }
     
+    hr {
+        color: black
+    }
+    
     #blog1footer {
-        height: 75px;
-        border: 3px solid pink;
+        display: flex;
+        justify-content: center;
+        height: 150px;
+        border: 3px solid black;
     }
     
     @media only screen and (min-width:801px) and (max-width:1100px) {

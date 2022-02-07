@@ -1,80 +1,263 @@
-    body {
-        background-color: #84AC79;
-    }
-    
-    #topic {
-        background-color: darkblue;
-        background-image: url("photo/Photo_1629559496705.jpg");
-        text-align: center;
-        border: 25px solid rgb(132, 172, 121, .5);
-    }
-    
-    .textTopic {
-        color: darkblue;
-        font-size: 75px;
-        padding-top: 30px;
-        text-shadow: 6px 6px 12px black;
-    }
-    
-    .textTopicH2 {
-        color: #84AC79;
-        font-size: 50px;
-        text-shadow: 3px 3px 6px black;
-        text-align: center;
-    }
-    
-    .textTopicH3 {
-        color: darkblue;
-        font-size: 60px;
-        text-shadow: 3px 3px 6px black;
-        text-align: center;
-    }
-    
-    .border {
-        /* display: grid; */
-        border: 40px solid;
-        border-image: url("photo/Photo_1629559496705.jpg")30 round;
-        margin: 3%;
-        padding: 2%;
-        box-shadow: 10px 10px 20px black;
-        background: #84AC79;
-        /* background: black; */
-    }
-    
-    .grid-container-section1 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        height: 450px;
-    }
-    
-    #blog3photo1 {
-        /* grid-area: photo1; */
-        align-self: flex-end;
-    }
-    
-    #blog3photo2 {
-        /* grid-area: photo2; */
-        align-self: flex-start;
-    }
-    
-    #blog3photo3 {
-        /* grid-area: photo3; */
-        align-self: flex-end;
-    }
-    
-    #table {
-        height: 400px;
-        width: 600px;
-        border: 2px solid black;
-        background: black;
-    }
-    
-    tr {
-        background: black;
-    }
-    
-    td,
-    th {
-        background: #84AC79;
-    }
+        body {
+            /*background-color: #84AC79;*/
+            background: linear-gradient(to right, #84AC79 0%, #84AC79 20%, rgb(32, 230, 108) 28%, rgb(32, 230, 108) 72%, #84AC79 80%, #84AC79 100%);
+        }
+        
+        #topic {
+            background-color: darkblue;
+            background-image: url("photo/Photo_1629559496705.jpg");
+            text-align: center;
+            border: 25px solid rgb(132, 172, 121, .5);
+        }
+        
+        .textTopic {
+            color: darkblue;
+            font-size: 75px;
+            padding-top: 30px;
+            text-shadow: 6px 6px 12px black;
+        }
+        
+        .textTopicH2 {
+            color: #84AC79;
+            font-size: 50px;
+            text-shadow: 3px 3px 6px black;
+            text-align: center;
+        }
+        
+        .textTopicH3 {
+            color: darkblue;
+            font-size: 60px;
+            text-shadow: 3px 3px 6px black;
+            text-align: center;
+        }
+        
+        .border {
+            /* display: grid; */
+            border: 40px solid;
+            border-image: url("photo/Photo_1629559496705.jpg")30 round;
+            margin: 3%;
+            padding: 2%;
+            box-shadow: 10px 10px 20px black;
+            background: #84AC79;
+            /* background: black; */
+        }
+        
+        .grid-container-section1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            height: 450px;
+        }
+        
+        #blog3photo1 {
+            /* grid-area: photo1; */
+            align-self: flex-end;
+        }
+        
+        #blog3photo2 {
+            /* grid-area: photo2; */
+            align-self: flex-start;
+        }
+        
+        #blog3photo3 {
+            /* grid-area: photo3; */
+            align-self: flex-end;
+        }
+        
+        #textMacro {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        article {
+            font-size: 20px;
+            width: 80%;
+            text-align: center;
+        }
+        
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* left: 25%;
+        right: 25%; */
+        }
+        
+        #table {
+            height: 400px;
+            width: 600px;
+            border: 2px solid black;
+            background: black;
+            align-items: center;
+        }
+        
+        #elTable {
+            display: inline-block;
+            position: relative;
+            left: 25%;
+            right: 15%;
+            margin-bottom: 100px;
+            overflow-x: auto;
+        }
+        
+        tr {
+            background: black;
+        }
+        
+        td,
+        th {
+            background: #84AC79;
+        }
+        
+        footer {
+            background-image: url("photo/Photo_1629559496705.jpg");
+            text-align: center;
+            border: 12px solid rgb(132, 172, 121, .5);
+            width: 97%;
+            bottom: 0;
+            margin: 1%;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav>h3>ul {
+            columns: 1;
+        }
+        
+        a {
+            font-size: 24px;
+            color: lightgreen;
+            text-align: left;
+            text-shadow: 2px 2px 4px black;
+        }
+        
+        @media only screen and (min-width:1201px) and (max-width:1400px) {
+            .textTopic {
+                color: darkblue;
+                font-size: 65px;
+            }
+            .textTopicH3 {
+                color: darkred;
+                font-size: 50px;
+            }
+            #blog3photo1,
+            #blog3photo2,
+            #blog3photo3 {
+                width: 375px;
+                height: auto;
+            }
+            .grid-container-section1 {
+                height: 390px;
+            }
+        }
+        
+        @media only screen and (min-width:1001px) and (max-width:1200px) {
+            .textTopic {
+                color: orange;
+                font-size: 60px;
+            }
+            .textTopicH3 {
+                color: darkgreen;
+                font-size: 45px;
+            }
+            #blog3photo1,
+            #blog3photo2,
+            #blog3photo3 {
+                width: 300px;
+                height: auto;
+            }
+            .grid-container-section1 {
+                height: 330px;
+            }
+            footer>nav>h2 {
+                color: darkred;
+            }
+            footer {
+                width: 95%;
+            }
+        }
+        
+        @media only screen and (min-width:801px) and (max-width:1000px) {
+            .textTopic {
+                color: darkslateblue;
+                font-size: 55px;
+            }
+            .textTopicH3 {
+                color: palevioletred;
+                font-size: 40px;
+            }
+            #blog3photo1,
+            #blog3photo2,
+            #blog3photo3 {
+                width: 230px;
+                height: auto;
+            }
+            .grid-container-section1 {
+                height: 240px;
+            }
+            #elTable {
+                left: 18%;
+            }
+            table {
+                /* border-collapse: collapse; */
+                table-layout: fixed;
+                width: 100%;
+            }
+            td {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                word-wrap: break-word;
+            }
+            footer>nav>h2 {
+                color: darkblue;
+            }
+            footer {
+                width: 90%
+            }
+        }
+        
+        @media only screen and (min-width:500px) and (max-width:800px) {
+            .textTopic {
+                color: darkred;
+                font-size: 55px;
+            }
+            .textTopicH3 {
+                color: darkblue;
+                font-size: 40px;
+            }
+            #blog3photo1,
+            #blog3photo2,
+            #blog3photo3 {
+                width: 180px;
+                height: auto;
+            }
+            .grid-container-section1 {
+                height: 210px;
+            }
+            #elTable {
+                left: 10%;
+            }
+            table {
+                /* border-collapse: collapse; */
+                table-layout: fixed;
+                width: 90%;
+            }
+            th,
+            td {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                word-wrap: break-word;
+                font-size: small;
+            }
+            footer>nav>h2 {
+                color: darkslategrey;
+            }
+            footer {
+                width: 85%
+            }
+        }
