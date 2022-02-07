@@ -1,0 +1,10 @@
+#box1photo,
+#box2photo,
+#box3photo {
+    height: 200px;
+    width: 300px;
+}
+
+img {
+    box-shadow: 10px 10px 18px rgb(46, 44, 44);
+}

@@ -1,0 +1,26 @@
+#topic {
+    background-color: darkblue;
+    background-image: url("photo/Photo_1629559496705.jpg");
+    text-align: center;
+    border: 25px solid rgb(132, 172, 121, .5);
+}
+
+.textTopic {
+    color: darkblue;
+    font-size: 75px;
+    padding-top: 30px;
+    text-shadow: 6px 6px 12px black;
+}
+
+.textTopicH2 {
+    color: #84AC79;
+    font-size: 50px;
+    text-shadow: 3px 3px 6px black;
+    text-align: center;
+}
+
+.textTopicH3 {
+    color: darkblue;
+    font-size: 60px;
+    text-shadow: 3px 3px 6px black;
+}
