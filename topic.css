@@ -7,6 +7,7 @@
 
 .textTopic {
     color: darkblue;
+    /* mix-blend-mode: difference; */
     font-size: 75px;
     padding-top: 30px;
     text-shadow: 6px 6px 12px black;
