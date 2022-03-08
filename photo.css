@@ -1,10 +1,17 @@
-#box1photo,
-#box2photo,
-#box3photo {
+#box1photo>a>img,
+#box2photo>a>img,
+#box3photo>a>img {
     height: 200px;
     width: 300px;
 }
 
 img {
     box-shadow: 10px 10px 18px rgb(46, 44, 44);
+}
+
+#box1photo>a>img:hover,
+#box2photo>a>img:hover,
+#box3photo>a>img:hover {
+    height: 210px;
+    width: 315px;
 }

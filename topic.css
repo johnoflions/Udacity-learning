@@ -1,27 +1,86 @@
-#topic {
-    background-color: darkblue;
-    background-image: url("photo/Photo_1629559496705.jpg");
-    text-align: center;
-    border: 25px solid rgb(132, 172, 121, .5);
-}
-
-.textTopic {
-    color: darkblue;
-    /* mix-blend-mode: difference; */
-    font-size: 75px;
-    padding-top: 30px;
-    text-shadow: 6px 6px 12px black;
-}
-
-.textTopicH2 {
-    color: #84AC79;
-    font-size: 50px;
-    text-shadow: 3px 3px 6px black;
-    text-align: center;
-}
-
-.textTopicH3 {
-    color: darkblue;
-    font-size: 60px;
-    text-shadow: 3px 3px 6px black;
-}
+            #topic {
+                background-color: darkblue;
+                background-image: url("photo/Photo_1629559496705.jpg");
+                text-align: center;
+                border: 25px solid rgb(132, 172, 121, .5);
+            }
+            
+            .textTopic {
+                color: darkblue;
+                /* mix-blend-mode: difference; */
+                font-size: 75px;
+                padding-top: 30px;
+                text-shadow: 6px 6px 12px black;
+                margin-left: 350px;
+                margin-right: 350px;
+            }
+            
+            .textTopicH2 {
+                color: #84AC79;
+                font-size: 50px;
+                text-shadow: 3px 3px 6px black;
+                text-align: center;
+            }
+            
+            .textTopicH3 {
+                color: darkblue;
+                font-size: 60px;
+                text-shadow: 3px 3px 6px black;
+            }
+            
+            @media(max-width:600px) {
+                .textTopic {
+                    /* color: darkred; */
+                    font-size: 40px;
+                    margin-left: 40px;
+                    margin-right: 40px;
+                }
+                .textTopicH3 {
+                    font-size: 30px;
+                }
+                .textTopicH2 {
+                    font-size: 40px;
+                }
+            }
+            
+            @media only screen and (min-width:601px) and (max-width: 800px) {
+                .textTopic {
+                    /* color: darkred; */
+                    font-size: 45px;
+                    margin-left: 75px;
+                    margin-right: 75px;
+                }
+                .textTopicH3 {
+                    font-size: 30px;
+                }
+                .textTopicH2 {
+                    font-size: 40px;
+                }
+            }
+            
+            @media only screen and (min-width:801px) and (max-width:1200px) {
+                .textTopic {
+                    color: purple;
+                    font-size: 55px;
+                    margin-left: 150px;
+                    margin-right: 150px;
+                }
+                .textTopicH3 {
+                    font-size: 45px;
+                }
+                .textTopicH2 {
+                    font-size: 45px;
+                }
+            }
+            
+            @media only screen and (min-width:1201px) and (max-width:1450px) {
+                .textTopic {
+                    /* color: purple;*/
+                    font-size: 60px;
+                    margin-left: 150px;
+                    margin-right: 150px;
+                }
+                .textTopicH3 {
+                    font-size: 50px;
+                }
+            }
