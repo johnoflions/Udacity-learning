@@ -12,6 +12,6 @@ img {
 #box1photo>a>img:hover,
 #box2photo>a>img:hover,
 #box3photo>a>img:hover {
-    height: 210px;
-    width: 315px;
+    height: 220px;
+    width: 330px;
 }

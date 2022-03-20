@@ -20,11 +20,11 @@
                 }
                 
                 #pre1 {
-                    padding-left: 190px;
+                    padding-left: 170px;
                 }
                 
                 #pre2 {
-                    padding-left: 450px;
+                    padding-left: 425px;
                 }
                 
                 @media(max-width:600px) {
