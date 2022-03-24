@@ -145,7 +145,7 @@ for (let j = 0; j < oneCards.length; j++) {
         this.className += ' active';
     });
 }
-// "Viewerport section"
+// "Viewport section"
 function isInVieuwport(element) {
     element = document.querySelector('#topic');
     const rect = element.getBoundingClientRect();
