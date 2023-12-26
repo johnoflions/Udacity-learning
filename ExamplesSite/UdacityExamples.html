@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Udacity Examples JanvL</title>
+    <style>
+        @import "UEBox.css";
+        body {
+            background-color: lightblue;
+            font-size: 18px;
+            /*General setting*/
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="UdacityExamplesCSS.css" />
+    <!--A font family from Google "Oregano"-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oregano" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <header>
+        <!-- Navigation -->
+        <nav>
+            <h5 class="BoxTitle">**Navigation</h5>
+        </nav>
+    </header>
+    <h1>Udacity examples in use</h1>
+    <!-- Text part -->
+    <article>
+        <h5 class="BoxTitle">** Text part</h5>
+        <p id="typography">Text Example <del>Jan van Leeuwen(prefer with html elements del ins)</del> ==> <strong> headers or footers(html element strong)</strong>, as discussed above, stick to the top and bottom of the layout viewport, and therefore remain in view when
+            we zoom in with the keyboard. If you pinch-zoom, the layout viewport may not be fully visible. <em>If you magnify from the middle of the layout viewport, the content will expand in all four directions. If you have a sticky header or footer, they will still be stuck to the top
+            or bottom of the layout viewport, but they may not be visible at the top and bottom of the device's screen — which is the visual viewport(prefer with html element em).</em> The visual viewport is the currently visible portion of the layout
+            viewport. If you scroll down, you are changing the contents of the visual viewport and bringing the bottom of the layout viewport into view, displaying the sticky footer, which will then stay stuck at the bottom.</p>
+    </article>
+
+    <!--Box examples for Box-Models-->
+    <div class="elBox" id="elBox1">box 1</div>
+    <div class="elBox" id="elBox2">box 2</div>
+    <div class="elBox" id="elBox3">box 3</div>
+    <aside>
+
+        <!-- Forms_Collecting information -->
+        <form>
+            <h5 class="BoxTitle">** Forms_Collection information</h5>
+            <h6 class="SubForms">* SubForms_Text input</h6>
+            <input type="text" />
+            <br/>
+            <h6 class="SubForms">* SubForms_Radio input</h6>
+            <input type="radio" />
+            <input type="radio" checked/>
+            <br/>
+            <h6 class="SubForms">* SubForms_Select input</h6>
+            <label for="color-select">Choose a color:</label>
+
+            <select id="color-select">
+  <option value="">--Please choose an option--</option>
+  <option value="blue">Blue</option>
+  <option value="red">Red</option>
+  <option value="green">Green</option>
+  <option value="yellow">Yellow</option>
+  <option value="orange">Orange</option>
+  <option value="pink">Pink</option>
+</select>
+            <br/>
+            <h6 class="SubForms">* SubForms_Textarea input</h6>
+            <label for="learn">What do you hope to learn today?</label>
+
+            <textarea id="learn" name="learn" rows="5" cols="30">
+I hope to learn about... (get green if hover over...)
+</textarea>
+            <br/>
+            <h6 class="SubForms">* SubForms_Checkbox input</h6>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label><br>
+        </form>
+    </aside>
+    <footer></footer>
+</body>
+
+</html>

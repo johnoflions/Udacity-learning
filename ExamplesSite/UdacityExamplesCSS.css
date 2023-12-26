@@ -1,0 +1,66 @@
+/*Spedificity HS
+_Type selectors
+_Class selectors
+_ID Selectors
+_Style attribute (used directly inside HTML Element)
+_!Important(Used after selector, overrule all above, exceptional use)
+*/
+
+
+/*Element selector*/
+
+h1 {
+    color: purple;
+}
+
+
+/*Attribute selector icm with element*/
+
+h5[class="BoxTitle"] {
+    color: red;
+}
+
+h6[class="SubForms"] {
+    color: brown;
+}
+
+
+/*pseudo class-selector _ the :hover part*/
+
+textarea:hover {
+    background-color: lightseagreen;
+}
+
+
+/*Select multiple HTML elements*/
+
+h1,
+h5 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+aside {
+    position: relative;
+    width: 300px;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+
+/*Typography with CSS
+_ Text-align
+_Font-size
+_Color
+_Line-height
+*/
+
+#typography {
+    font-family: 'Oregano', sans-serif;
+    text-align: center;
+    color: brown;
+    width: 64%;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    text-decoration: none;
+    /*text-decoration -> underline the text*/
+}
