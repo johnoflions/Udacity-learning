@@ -2,24 +2,58 @@
 
 .elBox {
     /*position: absolute;*/
-    font-size: 3em;
+    font-size: 1em;
     /*css Relative Unit => General size in HTML-style-body */
-    padding: 60px;
+    padding: 30px;
     margin: 0px;
     border-radius: 25px;
     /*Below can be used for each element*/
-    height: 150px;
-    width: 275px;
+    /*height: 50px;*/
+    /*width: 75px;*/
 }
 
-.container {
+.containerRow {
     display: flex;
     flex-direction: row;
     align-items: center;
     /*align-items: stretch flex-start flex-end*/
-    justify-content: center;
-    /*justify-content: flex-start flex-end space-around space-between space-evenly*/
+    justify-content: space-evenly;
+    /*justify-content: flex-start flex-end space-around space-between center*/
     border: 1px solid yellow;
+}
+
+.containerCol1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*align-items: stretch flex-start flex-end*/
+    justify-content: space-evenly;
+    /*justify-content: flex-start flex-end space-around space-between center*/
+    border: 1px solid yellow;
+}
+
+.containerCol2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*align-items: stretch flex-start flex-end*/
+    justify-content: space-evenly;
+    /*justify-content: flex-start flex-end space-around space-between center*/
+    border: 1px solid yellow;
+}
+
+.containerCol3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*align-items: stretch flex-start flex-end*/
+    justify-content: space-evenly;
+    /*justify-content: flex-start flex-end space-around space-between center*/
+    border: 1px solid yellow;
+}
+
+#elBoxRw {
+    background-color: plum;
 }
 
 #elBox1 {

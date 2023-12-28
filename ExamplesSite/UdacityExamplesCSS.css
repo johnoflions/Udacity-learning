@@ -7,6 +7,56 @@ _!Important(Used after selector, overrule all above, exceptional use)
 */
 
 
+/*Grid settings*/
+
+.containerHeader {
+    grid-area: header;
+}
+
+.containerTxt {
+    grid-area: textbox;
+    border: 5px solid red;
+}
+
+.containerRow {
+    grid-area: boxrow;
+}
+
+.containerCol1 {
+    grid-area: boxcol1
+}
+
+.containerCol1 {
+    grid-area: boxcol2
+}
+
+.containerCol1 {
+    grid-area: boxcol3
+}
+
+.containerAside {
+    grid-area: aside;
+    border: 5px solid blue;
+}
+
+.containerFooter {
+    grid-area: footer;
+    border: 5px solid gray;
+    height: 100px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header header header header' 'textbox textbox textbox aside' 'boxrow boxrow boxrow aside' 'boxcol1 boxcol2 boxcol3 aside' 'boxcol1 boxcol2 boxcol3 aside' 'boxcol1 boxcol2 boxcol3 aside' 'footer footer footer aside';
+    height: 100%;
+    gap: 15px;
+    padding: 10px;
+    /*option instead of flex properties or to set width/heigth in grid settings*/
+    grid-template-columns: 25% 25% 25% 20%;
+    grid-template-rows: 5% 30% 15% 15% 15% 15% 5%;
+}
+
+
 /*Element selector*/
 
 h1 {
