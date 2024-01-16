@@ -63,6 +63,10 @@ grid-template-colums: repeat(4, 1fr);
 
 /*Element selector*/
 
+nav {
+    gap: 25px;
+}
+
 h1 {
     color: purple;
 }

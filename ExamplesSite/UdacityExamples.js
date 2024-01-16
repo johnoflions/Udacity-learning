@@ -8,6 +8,11 @@ if (typeof document !== "undefined") {
 }
 
 /*date*/
+
+//document.addEventListener('DOMContentLoaded', function() {
+// Your code here
+let showDate = document.getElementById("resentDate");
 const d = new Date();
 console.log(d);
-document.getElementById("recentDate").innerHTML = d;
+showDate.innerHTML = d;
+//});
