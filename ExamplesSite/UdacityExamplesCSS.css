@@ -16,22 +16,29 @@ _!Important(Used after selector, overrule all above, exceptional use)
 .containerTxt {
     grid-area: textbox;
     border: 5px solid red;
+    margin-top: 50px;
+    height: max-content;
 }
 
 .containerRow {
     grid-area: boxrow;
+height: max-content;
+margin-top: 100px;
 }
 
 .containerCol1 {
-    grid-area: boxcol1
+    grid-area: boxcol1;
+height: max-content;
 }
 
 .containerCol1 {
-    grid-area: boxcol2
+    grid-area: boxcol2;
+height: max-content;
 }
 
 .containerCol1 {
-    grid-area: boxcol3
+    grid-area: boxcol3;
+height: max-content;
 }
 
 .containerAside {
