@@ -54,6 +54,10 @@ _!Important(Used after selector, overrule all above, exceptional use)
     /*option instead of flex properties or to set width/heigth in grid settings*/
     grid-template-columns: 25% 25% 25% 20%;
     grid-template-rows: 5% 30% 15% 15% 15% 15% 5%;
+    /*grid-auto-rows: minmax(100px, auto);
+grid-template-colums: 1fr 1fr 1fr 1fr);
+grid-template-colums: repeat(4, 1fr);
+*/
 }
 
 
@@ -61,6 +65,10 @@ _!Important(Used after selector, overrule all above, exceptional use)
 
 h1 {
     color: purple;
+}
+
+h3 {
+    border: 2px dotted wheat
 }
 
 

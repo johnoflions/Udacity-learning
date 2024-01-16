@@ -1,0 +1,121 @@
+.container {
+    /* Step 1: Set display to grid */
+    display: grid;
+    /* Step 2: setup rows amd columns */
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr 2fr 1fr;
+    grid-gap: 10px;
+    /* Step : setup named grid areas */
+    grid-template-areas: "hd" "cntt" "ftr" "sbr" "ft";
+    border: 2px solid green;
+}
+
+.box {
+    border: 1px solid red;
+    background: #F8FA9D;
+}
+
+.feature {
+    grid-area: ftr;
+}
+
+.header {
+    /* Set elements grid-area here */
+    grid-area: hd;
+}
+
+.footer {
+    /* Set elements grid-area here */
+    grid-area: ft;
+}
+
+.sidebar {
+    /* Set elements grid-area here */
+    grid-area: sbr;
+}
+
+.content {
+    /* Set elements grid-area here */
+    grid-area: cntt;
+    background-image: url(Fotos/BeekRenkum.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*If Nesting Grid, please selector is ID for overruling*/
+
+.sectionc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 20px;
+    gap: 15px
+}
+
+.clmn {
+    border: 3px solid pink;
+    height: 75px;
+    width: 200px;
+    align-items: center;
+}
+
+.sectionr {
+    display: flex;
+    border: 2px solid blue;
+    height: 47%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+}
+
+.row {
+    border: 3px solid grey;
+    text-align: center;
+    margin: 5px;
+}
+
+h2 {
+    text-align: center;
+    color: green;
+}
+
+
+/*Medium Screens*/
+
+@media (min-width: 500px) and (max-width:1000px) {
+    body {
+        background: blue;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 2fr 2fr 4fr 1fr;
+        grid-gap: 10px;
+        grid-template-areas: "hd hd hd hd hd hd" "ftr ftr ftr ftr ftr ftr" "cntt cntt cntt cntt sbr sbr" "ft ft ft ft ft ft";
+        border: 2px solid green;
+    }
+    .sectionc {
+        flex-direction: column;
+    }
+}
+
+
+/*Large Screens*/
+
+@media (min-width: 1001px) {
+    body {
+        background: orange;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 4fr 2fr;
+        grid-template-rows: 2fr 2fr 4fr 1fr;
+        grid-gap: 10px;
+        grid-template-areas: "hd hd hd hd hd hd" "ftr ftr ftr ftr ftr ftr" "cntt cntt cntt cntt sbr sbr" "ft ft ft ft ft ft";
+        border: 2px double green;
+    }
+    .sectionc {
+        flex-direction: row;
+    }
+}
